@@ -11,7 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'texla_service1.texla_service.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'texla_service.settings')
 print(">>> Current working directory:", os.getcwd())
 print(">>> Contents:", os.listdir(os.getcwd()))
 

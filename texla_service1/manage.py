@@ -2,11 +2,15 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+ROOT_URLCONF = 'texla_service.urls'
+WSGI_APPLICATION = 'texla_service.wsgi.application'
+ASGI_APPLICATION = 'texla_service.asgi.application'
+
 
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'texla_service1.texla_service.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'texla_service.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
