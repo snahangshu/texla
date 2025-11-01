@@ -10,4 +10,4 @@ python manage.py migrate --noinput
 python manage.py collectstatic --noinput
 
 # Start Gunicorn server
-gunicorn texla_service.wsgi:application --bind 0.0.0.0:$PORT
+gunicorn texla_service.texla_service.wsgi:application --bind 0.0.0.0:$PORT
