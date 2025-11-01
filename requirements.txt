@@ -17,3 +17,4 @@ gunicorn==21.2.0
 
 # Utilities
 certifi==2024.8.30
+dnspython==2.6.1
