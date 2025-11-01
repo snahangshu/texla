@@ -1,6 +1,6 @@
 # Core Django and database
 Django==4.2.14
-django-nonrel-djongo==1.4.0
+git+https://github.com/nesdis/djongo.git@master
 pymongo==3.12.3
 
 # Django REST framework and JWT
