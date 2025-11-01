@@ -1,5 +1,5 @@
 # Core Django and database
-Django==4.2.14
+Django==3.1.12
 git+https://github.com/nesdis/djongo.git@master
 pymongo==3.11.4
 
