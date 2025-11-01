@@ -43,9 +43,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "corsheaders",
     "rest_framework",
-    "accounts",
-    "tickets",
-    "notifications",
+    'texla_service1.accounts',
+    'texla_service1.notifications',
+    'texla_service1.tickets',
 
 ]
 
