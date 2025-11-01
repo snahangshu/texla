@@ -88,7 +88,7 @@ DATABASES = {
         "ENGINE": "djongo",
         "NAME": "texla_crm",
         "CLIENT": {
-            "host": "mongodb+srv://mallikbishal93_db_user:BOT99Y4wjOoeKmMh@cluster0.piegpvl.mongodb.net/texla_crm?retryWrites=true&w=majority",
+            "host": "mongodb+srv://mallikbishal93_db_user:bishal123@B@cluster0.piegpvl.mongodb.net/texla_crm?retryWrites=true&w=majority",
             "tls": True,
             "tlsCAFile": certifi.where(),
         },
