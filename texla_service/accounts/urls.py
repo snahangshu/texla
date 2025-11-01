@@ -5,6 +5,7 @@ from .views import RegisterView, MeView
 urlpatterns = [
     path("register/", RegisterView.as_view(), name="register"),        # Admin creates engineer/admin users
     path("login/", TokenObtainPairView.as_view(), name="jwt-login"),   # returns access & refresh
+    path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path("token/refresh/", TokenRefreshView.as_view(), name="jwt-refresh"),
     path("me/", MeView.as_view(), name="me"),
 ]

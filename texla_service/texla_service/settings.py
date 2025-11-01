@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+import certifi
 
 load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -85,10 +86,12 @@ WSGI_APPLICATION = 'texla_service.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "djongo",
+        "NAME": "texla_crm",
         "CLIENT": {
             "host": "mongodb+srv://mallikbishal93_db_user:BOT99Y4wjOoeKmMh@cluster0.piegpvl.mongodb.net/texla_crm?retryWrites=true&w=majority",
             "tls": True,
-        }
+            "tlsCAFile": certifi.where(),
+        },
     }
 }
 
