@@ -4,7 +4,7 @@ from django.shortcuts import render
 from rest_framework import generics, permissions
 from django.contrib.auth import get_user_model
 from .serializers import RegisterSerializer, UserLiteSerializer
-# from .permissions import IsAdmin
+#from .permissions import IsAdmin
 from .models import User
 
 User = get_user_model()
