@@ -60,6 +60,8 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+
+
 ROOT_URLCONF = 'texla_service.urls'
 
 TEMPLATES = [{
@@ -145,3 +147,10 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",   # React default port
+    "http://localhost:8080",   # Your case
+    "https://texla.onrender.com",  # Optional: Allow same Render origin
+]
+CORS_ALLOW_CREDENTIALS = True
